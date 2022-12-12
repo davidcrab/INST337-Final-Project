@@ -6,9 +6,40 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <!-- <script src='main.js'></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>How did I end up heree</h1>
+  <header>
+    <h1>
+      Final Project
+    </h1>
+  </header>
+
+  <div>
+    <form class="main_form" method="GET" action="">
+      <h1>Pick your own week</h1>
+      <label for="resto">Enter start date</label>
+      <input name="resto" id="" />
+      <label for="">Enter end date</label>
+      <input name="" id="" />
+      <button class="button" type="submit" id="submit">Go!</button>
+  </form>
+
+  <div>
+    <h4>
+      This weeks asteriod count
+    </h4>
+    <div class="loader" id="countLoader"></div>
+    <div>
+      <canvas id="asteriodCount2"></canvas>
+    </div>
+  </div>
+
+
+  <footer>
+  </footer>
+  <script src="script.js" ></script>
 </body>
 </html>
+
