@@ -27,7 +27,6 @@ function getData(date) {
     .then(result => {
 
       let near_earth_objects = result.near_earth_objects
-
       let data = []
 
       // iterate dates, iterate asteriods
@@ -42,16 +41,12 @@ function getData(date) {
             y: parseInt(asteriod.close_approach_data[0].relative_velocity.miles_per_hour),
             r: diameter
           }
-
           // r: parseInt(asteriod.estimated_diameter.feet.estimated_diameter_max),
           data.push(asteriodData)
         }
       }
-      console.log(data)
-
       document.getElementById("countLoader").style.display = "none"
       createBubbleChart(data)
-
     })
     .catch(error => console.log('error', error));
 }
@@ -72,31 +67,6 @@ function createBubbleChart(data) {
     type: 'bubble',
     data: formattedData,
   });
-}
-
-
-function createLastSevenChart(dates, counts) {
-  const ctx = document.getElementById('velocityChart');
-  
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: dates,
-      datasets: [{
-        label: '# of Asteriods',
-        data: counts,
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-
 }
 
 async function mainEvent() {
