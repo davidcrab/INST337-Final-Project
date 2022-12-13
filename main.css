@@ -27,6 +27,50 @@ header {
   display: flex; 
   align-items: center;
   margin: 0;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex; 
+  align-items: center;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a:link {
+  color: 343d46;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(251, 60, 92);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .logo {
