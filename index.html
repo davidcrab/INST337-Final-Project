@@ -21,8 +21,8 @@
         <img src="asteriod.png" class="logo"/>
       </div>
       <div class="nav">
-        <a href="pages/weeklyCounter.html">Weekly Counter</a>
-        <a href="pages/closeCallPage.html">Close Calls</a>
+        <!-- <a href="pages/closeCallPage.html">Close Calls</a> -->
+        <a href="pages/Velocity.html">Scatter</a>
       </div>
     </div>
     <hr class="divider">
@@ -30,28 +30,22 @@
 
   <div>
     <form class="main_form" method="GET" action="">
-      <h1>Pick your own week</h1>
-      <label for="resto">Enter start date</label>
-      <input name="resto" id="" />
-      <label for="">Enter end date</label>
-      <input name="" id="" />
+      <h1>Pick a date</h1>
+      <label for="date">Enter date</label>
+      <input type="date" name="date" id="date" />
       <button class="button" type="submit" id="submit">Go!</button>
   </form>
 
   <div>
-    <h4>
-      This weeks asteriod count
-    </h4>
     <div class="loader" id="countLoader"></div>
     <div>
       <canvas id="asteriodCount2"></canvas>
     </div>
   </div>
-
-
   <footer>
+    <a href="https://github.com/davidcrab/davidcrab.github.io" target="_blank">Github</a>
   </footer>
-  <script src="script.js" ></script>
+  <script src="scripts/script.js" ></script>
 </body>
 </html>
 
