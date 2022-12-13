@@ -43,6 +43,11 @@ async function loadLastSevenDays(date) {
 
       document.getElementById("countLoader").style.display = "none"
 
+      const chart = Chart.getChart("asteriodCount2");
+      if (chart) {
+        chart.destroy();
+      }
+
       createLastSevenChart(dates, asteriodCounts)
 
     })
